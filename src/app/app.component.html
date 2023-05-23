@@ -1,3 +1,16 @@
-<div><h1>Hola mundo</h1></div>
-<button>hacer clic</button>
-<app-bienvenida></app-bienvenida>
+<div>
+  <h1>PARCIAL 1</h1>
+</div>
+
+<app-bienvenida
+  [nombre]="nombre"
+  [mostrarNombre]="mostrarNombre"
+></app-bienvenida>
+
+<div>
+  <p>Ingrese su nombre</p>
+  <input [(ngModel)]="nuevoNombre" placeholder="ingrese su nombre ..." />
+  <button (click)="cambiarNombre()">Cambiar</button>
+</div>
+
+<app-listado [lista]="listadoNombres"></app-listado>

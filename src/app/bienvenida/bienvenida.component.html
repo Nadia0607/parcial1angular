@@ -1,4 +1,4 @@
-<h1>Bienvenido</h1>
-<p>Ingrese su nombre</p>
-<input type="text"/>
-<button>Cambiar</button>
+<div>
+  <h1 *ngIf="!mostrarNombre">Bienvenid@</h1>
+  <h1 *ngIf="mostrarNombre">Bienvenid@ {{ nombre }}</h1>
+</div>

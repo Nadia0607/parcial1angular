@@ -1,0 +1,7 @@
+<button (click)="disabledFlag = !disabledFlag">Ver/Ocultar Listado</button>
+<div *ngIf="disabledFlag">
+  <h4>Listado de Alumnos</h4>
+  <ul>
+    <li *ngFor="let nombre of lista">{{ nombre }}</li>
+  </ul>
+</div>
